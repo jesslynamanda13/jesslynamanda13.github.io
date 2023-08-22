@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+
+:root{
+    --red: #FF6C58;
+    --yellow: #FFD600;
+    --blue: #006CC6;
+    --blue-electric: #0057FF;
+    --green: #19FF14;
+    --grey: #737373;
+    --space: "Space Mono";
+    --play: "Playfair Display";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: white;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    75%{
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.ellipse-1{
+    animation: fadeInOut 3s ease-in-out infinite;
+    position:absolute;
+    top: 20vw;
+    background-color: var(--red);
+    border-radius: 200px;
+    width:10vw;
+    height:30vw;
+    filter: blur(150px);
+    color: transparent;
+}
+
+.ellipse-2{
+    animation:  fadeInOut 3s ease-in-out infinite;
+    position:absolute;
+    top: 2vw;
+    right:0;
+    background-color: var(--yellow);
+    border-radius: 200px;
+    width:10vw;
+    height:60vw;
+  
+    filter: blur(150px);
+    color: transparent;
+}
+
+.ellipse-3{
+    animation:  fadeInOut 3s ease-in-out infinite;
+    position:absolute;
+    top: 30vw;
+    right:0;
+    background-color: var(--blue);
+    border-radius: 200px;
+    width:10vw;
+    height:20vw;
+  
+    filter: blur(150px);
+    color: transparent;
+}
+
+.navigation{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo{
+    margin-left: 4%;
+    max-width: 100%;
+    height: auto;
+}
+
+.logo img{
+    width: 8vw;
+    height:100%;
+}
+
+.navbar{
+    gap: 0.625rem;
+    margin-right: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: var(--grey);
+    font-family: var(--space);
+    font-weight: 700;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--grey);
+    font-family: var(--space);
+    font-weight: 700;
+}
+
+.navbar a:hover{
+    color: var(--blue-electric);
+}
+
+
+
+#body-text{
+    font-size: 1rem;
+}
+
+#h1-text{
+    font-size: 3vw;
+}
+
+.intro-text{
+    font-family: var(--space);
+    font-weight: 700;
+    font-size: 1.2vw;
+    margin-top: 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+.link-socials{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    justify-content: center;
+}
+
+.link-socials a{
+    font-family: var(--play);
+    text-decoration: none;
+    color:var(--blue-electric);
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 1.2vw;
+    margin-top: 2vw;
+}
+
+.about-me{
+    display:flex;
+    flex-direction: row;
+    gap: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.header-about-me{
+    color:var(--blue);
+    font-family:var(--space);
+    font-weight: 700;
+    font-size:3.5vw;
+    text-align: left;
+}
+
+.paragraph{
+    color: black;
+    font-family:var(--space);
+    font-weight: 700;
+    font-size:1.25vw;
+
+    width: 40vw;
+    text-align: left;
+    margin-top: 1vw;
+}
+.about-me img{
+    width: 20vw;
+}
+
+.experience{
+    justify-content: center;
+    margin-top: 4vw;
+    display:flex;
+    flex-direction: row;
+    gap: 6vw;
+}
+
+.header-experience p{
+    display: flex;
+    font-size:3.5vw;
+    justify-content: center;
+    margin-top: 6vw;
+    color:var(--blue);
+    font-family:var(--space);
+    font-weight: 700;
+}
+
+
+.valdo-inc, .bncc{
+    display:flex;
+    flex-direction: row;
+    gap: 4vw;
+    justify-content: center;
+    align-items: center;
+}
+.image-valdo img{
+    width: 6vw;
+}
+
+.image-bncc img{
+    width: 8vw;
+}
+
+.header-valdo, .header-bncc{
+    color:black;
+    font-family:var(--space);
+    font-weight: 700;
+    font-size:1.5vw;
+}
+
+.subheading-valdo, .subheading-bncc{
+    color:black;
+    font-family:var(--space);
+    font-weight: 500;
+    font-size:1vw;
+}
+/* .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+} */
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 4vw;
+    margin-bottom: 12vw;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2vw 8vw;
+}
+
+.grid-item{
+    display:flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+.header-additionals p{
+    display: flex;
+    justify-content: center;
+    margin-top: 6vw;
+    color:var(--blue);
+    font-family:var(--space);
+    font-weight: 700;
+    font-size:2vw;
+}
+
+#self-payroll, #seacinema, #meksiko, #lapak-kita{
+    transition: transform 0.2s;
+    cursor:pointer;
+}
+
+#self-payroll:hover, #seacinema:hover, #meksiko:hover, #lapak-kita:hover{
+    transform: scale(1.05); 
+    cursor:pointer;
+}
+.header-projects a{
+    color:#252525;
+    font-family:var(--space);
+    font-weight: 700;
+    font-size:1.5vw;
+    text-decoration: none;
+}
+
+#desc-place{
+    color: var(--red);
+    font-family:var(--space);
+    font-weight: 300;
+    font-size:1vw;
+    font-style: italic;
+}
+
+.desc-projects{
+    color:#252525;
+    font-family:var(--space);
+    font-weight: 500;
+    font-size:1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+.tech-stack{
+    margin-top: 0.5vw;
+    display:flex;
+    flex-direction: row;
+    gap: 2vw;
+    color:#0057FF;
+    font-size: 1vw;
+    font-weight: 700;
+}
+
+#h1-text-play{
+    font-size: 6rem;
+}
+
+
+.yournext{
+    color: black;
+    font-family: var(--space);
+    font-weight: 700;
+    margin-left: 30%;
+}
+
+.event{
+    color: var(--blue);
+    font-family: var(--play);
+    text-align: center;
+}
+
+.hover-here{
+    font-family: var(--space);
+    font-size: 1vw;
+    font-weight: 700;
+    margin-left: 24vw;
+    margin-top: 0vw;
+    color: rgb(187, 187, 187);
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.ishere{
+    color: black;
+    font-family: var(--space);
+    font-weight: 700;
+    padding-left: 50%;
+}
+
+.explorehere{
+    margin-top: 10vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textexplore{
+    font-family: var(--space);
+    color: black;
+    font-weight: 700;
+}
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1vw);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.arrow{
+    width: 2vw;
+    animation: floating 3s ease-in-out infinite;
+    margin-bottom: 20vw;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    #body-text {
+      font-size: 0.8rem;
+    }
+
+    .explorehere{
+        display:none;
+    }
+    .about-me{
+        display:flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+    .left img{
+        margin-top: 8vw;
+        width: 20vw;
+    }
+    .right{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .paragraph{
+        text-align: center;
+        width: 60vw;
+        font-size: 2.5vw;
+    }
+    .experience{
+        display:flex;
+        flex-direction: column;
+        gap: 4vw;
+    }
+    .header-valdo, .header-bncc{
+        font-size:3vw;
+    }
+    
+    .subheading-valdo, .subheading-bncc{
+        font-size:2vw;
+    }
+
+    .header-projects a{
+        font-size:3vw;
+    }
+    
+    #desc-place{
+        font-size:2vw;
+    }
+    
+    .desc-projects{
+        font-size:2vw;
+        gap: 1vw;
+    }
+    
+    .tech-stack{
+        gap: 2vw;
+        font-size: 2vw;
+    }
+
+    #body-text-ticket {
+        font-size: 0.5rem;
+    }
+    #h1-text{
+        font-size: 1.1rem;
+    }
+    .link-socials a{
+        font-size: 0.75rem;
+    }
+    #h1-text-play{
+        font-size: 3rem;
+    }
+    #paragraph{
+        font-size:0.8rem;
+    }
+}
+  
+@media (max-width: 480px) {
+    #body-text {
+      font-size: 0.5rem;
+    }
+    #body-text-ticket{
+        font-size: 0.3rem;
+    }
+    .explorehere{
+        display:none;
+    }
+    .left img{
+        width: 8vw;
+    }
+    .paragraph{
+        text-align: center;
+        width: 60vw;
+        font-size: 1.75vw;
+    }
+    .experience{
+        display:flex;
+        flex-direction: column;
+        gap: 4vw;
+    }
+    .header-valdo, .header-bncc{
+        font-size:2.5vw;
+    }
+    
+    .subheading-valdo, .subheading-bncc{
+        font-size:1vw;
+    }
+
+    .header-projects a{
+        font-size:2.5vw;
+    }
+    
+    #desc-place{
+        font-size:1vw;
+    }
+    
+    .desc-projects{
+        font-size:1.5vw;
+        gap: 1vw;
+    }
+    
+    .tech-stack{
+        gap: 2vw;
+        font-size: 2vw;
+    }
+    #h1-text{
+        font-size: 1.2rem;
+    }
+    .link-socials a{
+        font-size: 0.5rem;
+    }
+    
+    #h1-text-play{
+        font-size: 2.2rem;
+    }
+    #paragraph{
+        font-size:0.5rem;
+    }
+    
+    
+    
+    
+}
